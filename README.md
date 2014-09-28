@@ -6,7 +6,7 @@ API pour le site LeBonCoin
 Tasks list
 ----------
 DONE:
-Rien
+- Rien
 
 TODO:
 - Connexion au site
