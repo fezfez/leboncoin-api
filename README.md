@@ -3,6 +3,8 @@ leboncoin-api
 
 API pour le site LeBonCoin
 
+Tasks list
+----------
 DONE:
 Rien
 
@@ -13,3 +15,10 @@ TODO:
 	- depuis un fichier
 - Lister ses annonces
 - Supprimer une annonce
+
+Comment le compiler
+-------------------
+Nécessite grunt
+
+	npm install
+	grunt
