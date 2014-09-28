@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/briced/leboncoin-api/issues"
   },
-  "homepage": "https://github.com/briced/leboncoin-api"
+  "homepage": "https://github.com/briced/leboncoin-api",
+  "dependencies": {
+    "casperjs": "1.1.0-beta3"
+  }
 }
