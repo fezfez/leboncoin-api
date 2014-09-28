@@ -21,7 +21,8 @@ module.exports = function (grunt) {
       compile: {
         files: {
           'build/leboncoin-api.js': 'src/leboncoin-api.coffee',
-          'build/leboncoin-cli.js': 'src/leboncoin-cli.coffee'
+          'build/leboncoin-cli.js': 'src/leboncoin-cli.coffee',
+          'build/config.js': 'src/config.coffee'
         }
       }
     }

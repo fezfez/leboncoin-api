@@ -1,6 +1,5 @@
 class LeBonCoinAPI 
-      constructor: (@name) ->
-		talk: ->
-    		console.log "My name is #{@name}"
+	constructor: (@name) ->
+		
 
 module.exports = LeBonCoinAPI
