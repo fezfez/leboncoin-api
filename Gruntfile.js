@@ -20,7 +20,8 @@ module.exports = function (grunt) {
     coffee: {
       compile: {
         files: {
-          'build/leboncoinapi.js': 'src/**.coffee'
+          'build/leboncoin-api.js': 'src/leboncoin-api.coffee',
+          'build/leboncoin-cli.js': 'src/leboncoin-cli.coffee'
         }
       }
     }
@@ -33,7 +34,7 @@ module.exports = function (grunt) {
 
   /* grunt tasks */
   grunt.registerTask('build', ['clean', 'coffee']);
-  grunt.registerTask('dev', ['coffee', 'watch']);
+  grunt.registerTask('dev', ['build', 'watch']);
   grunt.registerTask('default', ['build']);
 
 };
