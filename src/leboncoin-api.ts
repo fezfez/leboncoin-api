@@ -1,5 +1,5 @@
 class LeBonCoinAPI {
-    constructor(public name: string) {
+    constructor(private login: string, private password: string) {
 
     }
 }
