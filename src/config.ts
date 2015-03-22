@@ -1,5 +1,8 @@
+declare var process: any;
+
 var config = {
-    login: "login"
+    login: process.env.LOGIN || "login",
+    password: process.env.PASSWORD || "password"
 }
 
 export = config;
