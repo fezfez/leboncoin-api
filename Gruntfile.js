@@ -1,41 +1,45 @@
 module.exports = function (grunt) {
-  'use strict';
-  var publicPort = 8000;
+    'use strict';
+    var publicPort = 8000;
 
-  grunt.initConfig({
-    pkg: grunt.file.readJSON('./package.json'),
+    grunt.initConfig({
+        pkg: grunt.file.readJSON('./package.json'),
 
-    watch: {
-      scripts: {
-        files: ['./src/**'],
-        tasks: ['build'],
-        options: {
-          spawn: false,
+        watch: {
+            scripts: {
+                files: ['./src/**'],
+                tasks: ['build'],
+                options: {
+                    spawn: false
+                }
+            }
         },
-      },
-    },
 
-    clean: ["./build"],
+        clean: ["./build"],
 
-    coffee: {
-      compile: {
-        files: {
-          'build/leboncoin-api.js': 'src/leboncoin-api.coffee',
-          'build/leboncoin-cli.js': 'src/leboncoin-cli.coffee',
-          'build/config.js': 'src/config.coffee'
+        typescript: {
+            base: {
+                src: ['src/**/*.ts'],
+                dest: 'build/',
+                options: {
+                    module: 'commonjs',
+                    target: 'es5',
+                    basePath: 'src/',
+                    sourceMap: true,
+                    declaration: true
+                }
+            }
         }
-      }
-    }
-  });
+    });
 
-  /* load every plugin in package.json */
-  grunt.loadNpmTasks('grunt-contrib-coffee');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-clean');
+    /* load every plugin in package.json */
+    grunt.loadNpmTasks('grunt-typescript');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-clean');
 
-  /* grunt tasks */
-  grunt.registerTask('build', ['clean', 'coffee']);
-  grunt.registerTask('dev', ['build', 'watch']);
-  grunt.registerTask('default', ['build']);
+    /* grunt tasks */
+    grunt.registerTask('build', ['clean', 'typescript']);
+    grunt.registerTask('dev', ['build', 'watch']);
+    grunt.registerTask('default', ['build']);
 
 };

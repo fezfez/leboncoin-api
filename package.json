@@ -17,8 +17,7 @@
   },
   "homepage": "https://github.com/briced/leboncoin-api",
   "dependencies": {
-    "casperjs": "1.1.0-beta3",
-    "nightmare": "^1.6.5"
+    "nightmare": "^1.7.0"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
@@ -26,6 +25,7 @@
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-coffee": "^0.11.1",
     "grunt-contrib-watch": "^0.6.1",
-    "nightmare": "^1.6.5"
+    "grunt-typescript": "^0.6.1",
+    "typescript": "^1.4.1"
   }
 }
