@@ -22,3 +22,7 @@ Nécessite grunt
 
 	npm install
 	grunt
+
+Comment le lancer
+-----------------
+LOGIN="test@test.com" PASSWORD="MYPASSWORD" node build/leboncoin-cli.js
