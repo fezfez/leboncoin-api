@@ -21,6 +21,7 @@ Comment le compiler
 Nécessite grunt
 
 	npm install
+	npm install -g phantomjs
 	grunt
 
 Comment le lancer
