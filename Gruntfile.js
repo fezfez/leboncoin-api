@@ -1,6 +1,5 @@
 module.exports = function (grunt) {
     'use strict';
-    var publicPort = 8000;
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('./package.json'),
@@ -24,7 +23,6 @@ module.exports = function (grunt) {
                 options: {
                     module: 'commonjs',
                     target: 'es5',
-                    basePath: 'src/',
                     sourceMap: true,
                     declaration: true
                 }
