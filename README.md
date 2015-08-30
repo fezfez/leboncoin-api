@@ -6,10 +6,9 @@ API pour le site LeBonCoin
 Tasks list
 ----------
 DONE:
-- Rien
+- Connexion au site
 
 TODO:
-- Connexion au site
 - Poster une annonce
 	- depuis le code
 	- depuis un fichier
